@@ -57,7 +57,7 @@ Designed to handle item-level tracking, stock updates, and real-time data operat
 
 ---
 
-👨‍💻 Author
+## 👨‍💻 Author
 
    Yesu Naik
    Software Engineer | Python | IoT | Embedded Systems
