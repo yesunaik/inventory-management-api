@@ -1,63 +1,93 @@
 # 📦 Inventory Management API
 
 ## 🚀 Overview
-A scalable inventory management system built using FastAPI with asynchronous processing and MySQL integration.  
-Designed to handle item-level tracking, stock updates, and real-time data operations.
+
+A production-grade Inventory Management System built using FastAPI, designed for real-time tracking of items, products, stock movement, and supply chain operations.
+
+This system supports complete inventory lifecycle including purchase, issue, return, and stock monitoring with scalable backend architecture.
 
 ---
 
 ## ⚙️ Features
-- Item-level inventory tracking
-- Asynchronous API processing using FastAPI
-- MySQL database integration
-- CRUD operations for inventory items
-- Scalable backend architecture
-- S3-based file handling support
+
+* Item & Product Management
+* Purchase & Return Handling
+* Stock Tracking & Inventory Control
+* Site & Location Management
+* Secure API with Token Authentication
+* File Upload Support (S3 Integration)
+* Modular & Scalable Architecture
 
 ---
 
 ## 🛠️ Tech Stack
-- Python
-- FastAPI
-- MySQL
-- Async Programming
-- REST APIs
-- AWS S3 (for file storage)
+
+* **Backend:** Python, FastAPI
+* **Database:** MySQL (mysql-connector)
+* **Architecture:** Modular (Routes, Services, DB Layer)
+* **Authentication:** Token-based security
+* **Storage:** AWS S3 (file handling)
+* **Tools:** Uvicorn, Pydantic
 
 ---
 
-## 🧠 My Role
-- Designed and developed complete backend APIs
-- Implemented asynchronous processing for performance
-- Integrated MySQL for data storage
-- Handled file uploads using S3
-- Built scalable and production-ready architecture
+## 📁 Project Structure
 
----
-
-## 📈 Impact
-- Improved inventory tracking efficiency
-- Reduced manual effort in stock management
-- Enabled real-time data access and updates
+```
+app/
+ ├── core/        # Security & authentication
+ ├── db/          # Database connection
+ ├── routes/      # API endpoints
+ ├── services/    # Business logic
+ ├── schemas/     # Request/Response models
+ ├── utils/       # Helper functions
+ └── main.py      # Application entry point
+```
 
 ---
 
 ## ▶️ How to Run
 
-1. Install dependencies:
-   pip install fastapi uvicorn mysql-connector-python
+### 1. Install dependencies
 
-2. Run the server:
+```bash
+pip install -r requirements.txt
+```
 
-  uvicorn main:app --reload
+### 2. Run the server
 
-3. Open API docs:
+```bash
+uvicorn app.main:app --reload
+```
 
-  http://127.0.0.1:8000/docs
+### 3. Access API Docs
+
+```
+http://127.0.0.1:8000/docs
+```
+
+---
+
+## 🔐 Security
+
+* Token-based authentication implemented
+* Protected API routes using middleware
+
+---
+
+## 📈 Key Highlights
+
+* Designed scalable backend using service-based architecture
+* Handles complex inventory workflows (purchase → stock → issue → return)
+* Clean separation of concerns for maintainability
+* Production-ready structure used in real-world systems
 
 ---
 
 ## 👨‍💻 Author
 
-   Yesu Naik
-   Software Engineer | Python | IoT | Embedded Systems
+**Yesu Naik**
+Software Engineer | Python | IoT | Embedded Systems
+
+📧 [yesunaik2001@gmail.com](mailto:yesunaik2001@gmail.com)
+🔗 LinkedIn: https://www.linkedin.com/in/yesu-naik-749734246/
